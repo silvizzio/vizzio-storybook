@@ -78,4 +78,28 @@ export {
   useSidebar,
 } from "./components/sidebar";
 
+export {
+  Table,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableCaption,
+} from "./components/table";
+
+export { DataTable } from "./components/data-table";
+export type { DataTableProps } from "./components/data-table";
+
+export {
+  ChartContainer,
+  ChartLegend,
+  ChartTooltip,
+  chartAxisProps,
+  chartGridProps,
+  useChartConfig,
+} from "./components/chart";
+export type { ChartConfig, ChartContainerProps } from "./components/chart";
+
 export { cn } from "./lib/utils";
