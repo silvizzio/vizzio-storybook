@@ -48,4 +48,34 @@ export {
 export { Toaster, toast } from "./components/toaster";
 export type { ToasterProps } from "./components/toaster";
 
+export {
+  Select,
+  SelectGroup,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+  SelectSeparator,
+} from "./components/select";
+
+export { Combobox } from "./components/combobox";
+export type { ComboboxProps, ComboboxOption } from "./components/combobox";
+
+export {
+  SidebarProvider,
+  Sidebar,
+  SidebarTrigger,
+  SidebarHeader,
+  SidebarContent,
+  SidebarFooter,
+  SidebarGroup,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuItem,
+  SidebarMenuButton,
+  SidebarInset,
+  useSidebar,
+} from "./components/sidebar";
+
 export { cn } from "./lib/utils";
