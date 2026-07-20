@@ -111,4 +111,10 @@ export type { ReviewStatusProps, ReviewStatusValue } from "./components/review-s
 export { ChangeType, CHANGE_TYPES } from "./components/change-type";
 export type { ChangeTypeProps, ChangeTypeValue } from "./components/change-type";
 
+export { TopTabBar, TopTab, TopTabAction } from "./components/top-tab";
+export type { TopTabProps, TopTabActionProps } from "./components/top-tab";
+
+export { ReportSelection } from "./components/report-selection";
+export type { ReportSelectionProps } from "./components/report-selection";
+
 export { cn } from "./lib/utils";
