@@ -12,7 +12,6 @@
 
 :root {
   /* BRAND. The rebrand surface. */
-  --color-brand: #2563eb;
   --color-accent: #2563eb;
   --color-accent-soft: #eff6ff;
   --color-accent-fg: #1d4ed8;
@@ -54,7 +53,6 @@
 
 [data-theme="dark"] {
   /* BRAND. The rebrand surface. */
-  --color-brand: #60a5fa;
   --color-accent: #60a5fa;
   --color-accent-soft: #1e3a8a;
   --color-accent-fg: #bfdbfe;
