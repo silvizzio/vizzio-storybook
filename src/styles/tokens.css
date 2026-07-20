@@ -134,6 +134,56 @@
   /* Layout */
   --nav-width: 16rem;
   --header-height: 3.5rem;
+
+  /* Categorical: detection layers. Sourced from the Figma
+     chartStatic ramp, the only categorical palette in the
+     library. Every pair clears AA against its own surface. */
+  --layer-building-surface: #e6f0ff;
+  --layer-building-border: #b5d2ff;
+  --layer-building-fg: #1447e6;
+  --layer-constructions-surface: #fff3e0;
+  --layer-constructions-border: #ffdca6;
+  --layer-constructions-fg: #bb4d00;
+  --layer-greenery-surface: #e0f9ea;
+  --layer-greenery-border: #a6ecc2;
+  --layer-greenery-fg: #016630;
+  --layer-lands-surface: #ffede0;
+  --layer-lands-border: #ffcaa6;
+  --layer-lands-fg: #ca3500;
+  --layer-road-surface: #f5e9ff;
+  --layer-road-border: #e2beff;
+  --layer-road-fg: #8200db;
+  --layer-safety-surface: #ffe4eb;
+  --layer-safety-border: #ffb1c4;
+  --layer-safety-fg: #c70036;
+
+  /* Categorical: change types. Violation is a category here,
+     not a warning, so it does not use the danger tokens. */
+  --change-demolition-surface: #ffe4eb;
+  --change-demolition-border: #ffb1c4;
+  --change-demolition-fg: #c70036;
+  --change-extended-surface: #e6f0ff;
+  --change-extended-border: #b5d2ff;
+  --change-extended-fg: #1447e6;
+  --change-violation-surface: #fff3e0;
+  --change-violation-border: #ffdca6;
+  --change-violation-fg: #bb4d00;
+
+  /* Review status is state, not category, so it maps onto the
+     semantic tokens. Layer and status appear on the same row,
+     and must not read as the same kind of thing. */
+  --status-needs-review-surface: #fff3e0;
+  --status-needs-review-border: #ffdca6;
+  --status-needs-review-fg: #bb4d00;
+  --status-edit-required-surface: #ffede0;
+  --status-edit-required-border: #ffcaa6;
+  --status-edit-required-fg: #ca3500;
+  --status-approved-surface: #e0f9ea;
+  --status-approved-border: #a6ecc2;
+  --status-approved-fg: #016630;
+  --status-rejected-surface: #fee2e2;
+  --status-rejected-border: #fca5a5;
+  --status-rejected-fg: #b91c1c;
 }
 
 [data-theme="dark"] {
@@ -172,4 +222,54 @@
 
   /* Checkbox tick, tinted to match on-accent. */
   --check-mark: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%230a0a0a' stroke-width='2.5'><path d='M3.5 8.5l3 3 6-6'/></svg>");
+
+  /* Categorical: detection layers. Sourced from the Figma
+     chartStatic ramp, the only categorical palette in the
+     library. Every pair clears AA against its own surface. */
+  --layer-building-surface: #0c1936;
+  --layer-building-border: #0f2f77;
+  --layer-building-fg: #8ec5ff;
+  --layer-constructions-surface: #311d08;
+  --layer-constructions-border: #6b3806;
+  --layer-constructions-fg: #ffd230;
+  --layer-greenery-surface: #082613;
+  --layer-greenery-border: #065021;
+  --layer-greenery-fg: #7bf1a8;
+  --layer-lands-surface: #341608;
+  --layer-lands-border: #742706;
+  --layer-lands-fg: #ffb86a;
+  --layer-road-surface: #240b35;
+  --layer-road-border: #4a0d76;
+  --layer-road-fg: #dab2ff;
+  --layer-safety-surface: #330814;
+  --layer-safety-border: #700622;
+  --layer-safety-fg: #ffa1ad;
+
+  /* Categorical: change types. Violation is a category here,
+     not a warning, so it does not use the danger tokens. */
+  --change-demolition-surface: #330814;
+  --change-demolition-border: #700622;
+  --change-demolition-fg: #ffa1ad;
+  --change-extended-surface: #0c1936;
+  --change-extended-border: #0f2f77;
+  --change-extended-fg: #8ec5ff;
+  --change-violation-surface: #311d08;
+  --change-violation-border: #6b3806;
+  --change-violation-fg: #ffd230;
+
+  /* Review status is state, not category, so it maps onto the
+     semantic tokens. Layer and status appear on the same row,
+     and must not read as the same kind of thing. */
+  --status-needs-review-surface: #311d08;
+  --status-needs-review-border: #6b3806;
+  --status-needs-review-fg: #ffd230;
+  --status-edit-required-surface: #341608;
+  --status-edit-required-border: #742706;
+  --status-edit-required-fg: #ffb86a;
+  --status-approved-surface: #082613;
+  --status-approved-border: #065021;
+  --status-approved-fg: #7bf1a8;
+  --status-rejected-surface: #340c0c;
+  --status-rejected-border: #7f1d1d;
+  --status-rejected-fg: #fca5a5;
 }

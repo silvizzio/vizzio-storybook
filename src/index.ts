@@ -102,4 +102,13 @@ export {
 } from "./components/chart";
 export type { ChartConfig, ChartContainerProps } from "./components/chart";
 
+export { DetectionBadge, DETECTION_LAYERS } from "./components/detection-badge";
+export type { DetectionBadgeProps, DetectionLayer } from "./components/detection-badge";
+
+export { ReviewStatus, REVIEW_STATUSES } from "./components/review-status";
+export type { ReviewStatusProps, ReviewStatusValue } from "./components/review-status";
+
+export { ChangeType, CHANGE_TYPES } from "./components/change-type";
+export type { ChangeTypeProps, ChangeTypeValue } from "./components/change-type";
+
 export { cn } from "./lib/utils";
