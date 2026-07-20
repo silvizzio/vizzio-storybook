@@ -16,4 +16,11 @@ export type { CheckboxProps } from "./components/checkbox";
 export { Card, CardTitle, CardBody } from "./components/card";
 export type { CardProps } from "./components/card";
 
+export { IconButton, iconButtonVariants } from "./components/icon-button";
+export type { IconButtonProps } from "./components/icon-button";
+
+export { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/tabs";
+
+export { Field, FieldLabel, useField, useFieldControl } from "./components/field";
+
 export { cn } from "./lib/utils";
