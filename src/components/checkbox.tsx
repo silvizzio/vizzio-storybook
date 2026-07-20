@@ -24,7 +24,7 @@ export function Checkbox({
         type="checkbox"
         aria-describedby={hintId}
         className={cn(
-          "mt-0.5 h-4 w-4 shrink-0 cursor-pointer appearance-none border border-[var(--color-border)] bg-[var(--color-bg)]",
+          "mt-0.5 h-4 w-4 shrink-0 cursor-pointer appearance-none rounded-[var(--radius-tick)] border border-[var(--color-border)] bg-[var(--color-bg)]",
           "checked:border-[var(--color-accent)] checked:bg-[var(--color-accent)]",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-muted)] focus-visible:ring-offset-1 focus-visible:ring-offset-[var(--color-bg)]",
           "disabled:cursor-not-allowed disabled:opacity-50",

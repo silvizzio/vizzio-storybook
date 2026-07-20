@@ -1,5 +1,5 @@
 import * as React from "react";
-import type { Meta, StoryObj } from "@storybook/react-vite";
+import type { Meta, StoryObj } from from "@storybook/react-vite";
 import { Input } from "./input";
 
 const meta: Meta<typeof Input> = {

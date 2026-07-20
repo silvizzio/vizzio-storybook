@@ -18,8 +18,8 @@ const shared = {
   brandTarget: "_self",
   fontBase: '"Inter", ui-sans-serif, system-ui, sans-serif',
   fontCode: "ui-monospace, SFMono-Regular, Menlo, monospace",
-  appBorderRadius: 0,
-  inputBorderRadius: 0,
+  appBorderRadius: 6,
+  inputBorderRadius: 4,
 };
 
 const light = create({

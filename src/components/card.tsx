@@ -7,7 +7,7 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function Card({ className, href, children, ...props }: CardProps) {
   const classes = cn(
-    "block border border-[var(--color-border)] bg-[var(--color-panel)] p-5",
+    "block rounded-[var(--radius-surface)] border border-[var(--color-border)] bg-[var(--color-panel)] p-5",
     href &&
       "transition-colors hover:border-[var(--color-muted)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-muted)]",
     className

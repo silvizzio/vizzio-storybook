@@ -1,7 +1,9 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../lib/utils";
 
-export const alertVariants = cva("border-l-2 bg-[var(--color-panel)] p-4", {
+export const alertVariants = cva(
+  "overflow-hidden rounded-[var(--radius-control)] border-l-2 bg-[var(--color-panel)] p-4",
+  {
   variants: {
     tone: {
       info: "border-l-[var(--color-border)]",

@@ -2,7 +2,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "../lib/utils";
 
 export const badgeVariants = cva(
-  "inline-flex items-center gap-1.5 whitespace-nowrap px-2 py-0.5 text-[12px] font-medium leading-5",
+  "inline-flex items-center gap-1.5 whitespace-nowrap rounded-[var(--radius-control)] px-2 py-0.5 text-[12px] font-medium leading-5",
   {
     variants: {
       variant: {
@@ -16,7 +16,10 @@ export const badgeVariants = cva(
           "bg-[var(--color-danger-border)] text-[var(--color-on-danger)]",
         warn: "border border-[var(--color-warn)] text-[var(--color-warn)]",
       },
-      shape: { square: "", round: "rounded-full px-2.5" },
+      shape: {
+        square: "",
+        round: "rounded-[var(--radius-full)] px-2.5",
+      },
     },
     defaultVariants: { variant: "neutral", shape: "square" },
   }

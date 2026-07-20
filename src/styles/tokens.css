@@ -12,6 +12,7 @@
 
 :root {
   /* BRAND. The rebrand surface. */
+  --color-brand: #2563eb;
   --color-accent: #2563eb;
   --color-accent-soft: #eff6ff;
   --color-accent-fg: #1d4ed8;
@@ -46,6 +47,26 @@
   /* Checkbox tick, tinted to match on-accent. */
   --check-mark: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2.5'><path d='M3.5 8.5l3 3 6-6'/></svg>");
 
+
+  /* Radius. Shared across themes, so defined once.
+     Layout regions stay square. Objects sitting on a surface take radius. */
+  --radius-none: 0px;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+  --radius-full: 9999px;
+
+  /* Component assignments. Change these to reshape the system at once. */
+  --radius-control: var(--radius-md);
+  --radius-field: var(--radius-sm);
+  --radius-surface: var(--radius-lg);
+  --radius-overlay: var(--radius-xl);
+  --radius-tick: var(--radius-xs);
+
   /* Layout */
   --nav-width: 16rem;
   --header-height: 3.5rem;
@@ -53,6 +74,7 @@
 
 [data-theme="dark"] {
   /* BRAND. The rebrand surface. */
+  --color-brand: #60a5fa;
   --color-accent: #60a5fa;
   --color-accent-soft: #1e3a8a;
   --color-accent-fg: #bfdbfe;
