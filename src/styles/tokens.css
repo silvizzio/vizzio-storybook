@@ -5,12 +5,20 @@
  * component references these variables and nothing else, so rebranding is a
  * matter of editing this file.
  *
+ * Each set carries two extra selectors so a subtree can be flipped against
+ * the page theme with data-inverse. Custom properties inherit, so putting
+ * data-inverse on any element re-themes everything inside it, with no
+ * JavaScript and no duplicated colour values.
+ *
  * The palette here is deliberately neutral. Greys carry the interface and a
  * single accent carries interaction. To rebrand, the four BRAND tokens in
  * each block are usually the only ones that need to change.
  */
 
-:root {
+/* Light. Also applied to an inverse subtree inside a dark page. */
+:root,
+[data-theme="light"],
+[data-theme="dark"] [data-inverse] {
   /* BRAND. The rebrand surface. */
   --color-brand: #2563eb;
   --color-accent: #2563eb;
@@ -186,7 +194,9 @@
   --status-rejected-fg: #b91c1c;
 }
 
-[data-theme="dark"] {
+/* Dark. Also applied to an inverse subtree inside a light page. */
+[data-theme="dark"],
+[data-theme="light"] [data-inverse] {
   /* BRAND. The rebrand surface. */
   --color-brand: #60a5fa;
   --color-accent: #60a5fa;
