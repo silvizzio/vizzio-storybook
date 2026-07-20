@@ -28,7 +28,7 @@ export function Checkbox({
           "checked:border-[var(--color-accent)] checked:bg-[var(--color-accent)]",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-muted)] focus-visible:ring-offset-1 focus-visible:ring-offset-[var(--color-bg)]",
           "disabled:cursor-not-allowed disabled:opacity-50",
-          "bg-[length:100%_100%] bg-center bg-no-repeat checked:bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22 fill=%22none%22 stroke=%22white%22 stroke-width=%222.5%22><path d=%22M3.5 8.5l3 3 6-6%22/></svg>')]",
+          "bg-[length:100%_100%] bg-center bg-no-repeat checked:[background-image:var(--check-mark)]",
           className
         )}
         {...props}

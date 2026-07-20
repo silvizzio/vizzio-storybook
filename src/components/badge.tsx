@@ -13,7 +13,7 @@ export const badgeVariants = cva(
         outline:
           "border border-[var(--color-border)] text-[var(--color-body)]",
         danger:
-          "bg-[var(--color-danger-border)] text-white",
+          "bg-[var(--color-danger-border)] text-[var(--color-on-danger)]",
         warn: "border border-[var(--color-warn)] text-[var(--color-warn)]",
       },
       shape: { square: "", round: "rounded-full px-2.5" },

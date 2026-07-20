@@ -1,57 +1,91 @@
+/**
+ * Design tokens.
+ *
+ * Light values sit on :root, dark values on [data-theme="dark"]. Every
+ * component references these variables and nothing else, so rebranding is a
+ * matter of editing this file.
+ *
+ * The palette here is deliberately neutral. Greys carry the interface and a
+ * single accent carries interaction. To rebrand, the four BRAND tokens in
+ * each block are usually the only ones that need to change.
+ */
+
 :root {
+  /* BRAND. The rebrand surface. */
+  --color-brand: #2563eb;
+  --color-accent: #2563eb;
+  --color-accent-soft: #eff6ff;
+  --color-accent-fg: #1d4ed8;
+  /* Text and icons placed on a filled accent or danger surface. */
+  --color-on-accent: #ffffff;
+  --color-on-danger: #ffffff;
+
+  /* Surfaces */
   --color-bg: #ffffff;
   --color-panel: #fafafa;
-  --color-fg: #0a0a0a;
-  --color-body: #404040;
-  --color-muted: #737373;
-  --color-border: #e5e5e5;
-  --color-border-subtle: #f0f0f0;
   --color-hover: #f5f5f5;
   --color-active: #f0f0f0;
   --color-code-bg: #f7f7f8;
-  --color-brand: #00bc7d;
-  --color-accent: #047857;
-  --color-accent-soft: #d1fae5;
-  --color-accent-fg: #047857;
+
+  /* Text */
+  --color-fg: #0a0a0a;
+  --color-body: #404040;
+  --color-muted: #737373;
+
+  /* Lines */
+  --color-border: #e5e5e5;
+  --color-border-subtle: #f0f0f0;
+
+  /* Status */
   --color-danger: #b91c1c;
   --color-danger-border: #dc2626;
   --color-warn: #b45309;
+
+  /* Elevation */
   --shadow-color: rgb(0 0 0 / 0.12);
 
+  /* Checkbox tick, tinted to match on-accent. */
+  --check-mark: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-width='2.5'><path d='M3.5 8.5l3 3 6-6'/></svg>");
+
+  /* Layout */
   --nav-width: 16rem;
-  --toc-width: 15rem;
   --header-height: 3.5rem;
 }
 
 [data-theme="dark"] {
-  --color-bg: #0c0c0e;
-  --color-panel: #131316;
-  --color-fg: #ffffff;
+  /* BRAND. The rebrand surface. */
+  --color-brand: #60a5fa;
+  --color-accent: #60a5fa;
+  --color-accent-soft: #1e3a8a;
+  --color-accent-fg: #bfdbfe;
+  /* The dark accent is light, so text on it must be dark. */
+  --color-on-accent: #0a0a0a;
+  --color-on-danger: #ffffff;
+
+  /* Surfaces */
+  --color-bg: #0a0a0a;
+  --color-panel: #141414;
+  --color-hover: #1a1a1a;
+  --color-active: #212121;
+  --color-code-bg: #141414;
+
+  /* Text */
+  --color-fg: #fafafa;
   --color-body: #d4d4d4;
-  --color-muted: #a1a1a1;
-  --color-border: #262626;
-  --color-border-subtle: #1c1c20;
-  --color-hover: #161619;
-  --color-active: #1c1c20;
-  --color-code-bg: #131316;
-  --color-brand: #00bc7d;
-  --color-accent: #00bc7d;
-  --color-accent-soft: #0e5e2e;
-  --color-accent-fg: #7bf1a8;
+  --color-muted: #a3a3a3;
+
+  /* Lines */
+  --color-border: #2e2e2e;
+  --color-border-subtle: #212121;
+
+  /* Status */
   --color-danger: #f87171;
-  --color-danger-border: #9e4042;
-  --color-warn: #ffd230;
+  --color-danger-border: #b91c1c;
+  --color-warn: #fbbf24;
+
+  /* Elevation */
   --shadow-color: rgb(0 0 0 / 0.45);
+
+  /* Checkbox tick, tinted to match on-accent. */
+  --check-mark: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%230a0a0a' stroke-width='2.5'><path d='M3.5 8.5l3 3 6-6'/></svg>");
 }
-
-html { color-scheme: light; scroll-behavior: smooth; }
-html[data-theme="dark"] { color-scheme: dark; }
-
-body {
-  background: var(--color-bg);
-  color: var(--color-fg);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Anchor targets clear the sticky header. */
