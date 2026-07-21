@@ -255,4 +255,12 @@ export type {
   ResizableHandleProps,
 } from "./components/resizable";
 
+export { DetectionList, DETECTION_LEVELS } from "./components/detection-list";
+export type {
+  DetectionListProps,
+  DetectionGroup,
+  Detection,
+  DetectionLevel,
+} from "./components/detection-list";
+
 export { cn } from "./lib/utils";
