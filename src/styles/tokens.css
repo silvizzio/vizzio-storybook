@@ -283,3 +283,33 @@
   --status-rejected-border: #7f1d1d;
   --status-rejected-fg: #fca5a5;
 }
+
+/**
+ * Motion primitives.
+ *
+ * Kept here rather than in a component file because more than one component
+ * needs them and they are part of the shared vocabulary. Each is disabled
+ * under prefers-reduced-motion, so callers do not have to remember.
+ */
+
+@keyframes vds-collapse-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes vds-collapse-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+/* The state selectors live here rather than as Tailwind variants, because a
+   variant can only decorate a Tailwind utility, not a plain class. */
+.vds-collapsible[data-state="open"] { animation: vds-collapse-down 200ms ease-out; }
+.vds-collapsible[data-state="closed"] { animation: vds-collapse-up 200ms ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+  .vds-collapsible[data-state="open"],
+  .vds-collapsible[data-state="closed"] {
+    animation: none;
+  }
+}
