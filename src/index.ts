@@ -142,4 +142,32 @@ export type { SwitchProps } from "./components/switch";
 export { Tooltip, TooltipProvider } from "./components/tooltip";
 export type { TooltipProps } from "./components/tooltip";
 
+export { Separator } from "./components/separator";
+
+export { Avatar, AvatarGroup } from "./components/avatar";
+export type { AvatarProps } from "./components/avatar";
+
+export { Breadcrumb } from "./components/breadcrumb";
+export type { BreadcrumbProps, BreadcrumbItem } from "./components/breadcrumb";
+
+export { RadioGroup, Radio } from "./components/radio-group";
+export type { RadioProps } from "./components/radio-group";
+
+export { Slider } from "./components/slider";
+export type { SliderProps } from "./components/slider";
+
+export {
+  AlertDialog,
+  AlertDialogTrigger,
+  AlertDialogContent,
+  AlertDialogTitle,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogAction,
+  AlertDialogCancel,
+} from "./components/alert-dialog";
+
+export { Pagination } from "./components/pagination";
+export type { PaginationProps } from "./components/pagination";
+
 export { cn } from "./lib/utils";
