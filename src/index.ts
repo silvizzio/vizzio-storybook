@@ -220,4 +220,39 @@ export type { InputFileProps } from "./components/input-file";
 export { ListItems, ListItem } from "./components/list-items";
 export type { ListItemProps } from "./components/list-items";
 
+export {
+  Drawer,
+  DrawerTrigger,
+  DrawerClose,
+  DrawerContent,
+  DrawerTitle,
+  DrawerDescription,
+  DrawerFooter,
+} from "./components/drawer";
+
+export { InputOTP } from "./components/input-otp";
+export type { InputOTPProps } from "./components/input-otp";
+
+export {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "./components/carousel";
+export type { CarouselProps } from "./components/carousel";
+
+export { DatePicker, CalendarView } from "./components/date-picker";
+export type { DatePickerProps, DateRange } from "./components/date-picker";
+
+export {
+  ResizableGroup,
+  ResizablePanel,
+  ResizableHandle,
+} from "./components/resizable";
+export type {
+  ResizableGroupProps,
+  ResizableHandleProps,
+} from "./components/resizable";
+
 export { cn } from "./lib/utils";
